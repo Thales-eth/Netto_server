@@ -1,6 +1,6 @@
 # Netto: Una aplicación de fotos creada usando el Stack MERN
 
-Picky es una red social de otakus y creadores de contenido. 
+Netto es una red social de otakus y creadores de contenido. 
 
 # API desplegada
 
@@ -45,7 +45,14 @@ En el directorio raíz del proyecto se encontrará una json denominado "####". A
 
 | URL path                    | HTTP Method       | Response                          | Action                        |
 | :--------------------------:|:-----------------:| :--------------------------------:| :----------------------------:|
-| /api/posts/list         | GET               | [posts]                           | Get all posts from the app     |
+| /api/posts/trends         | GET               | [posts]                           | Get most popular posts from the app     |
+| /api/posts/details/:id         | GET               | {post}                         | Get one particular post from     |
+| /api/posts/relevant         | GET               | [posts]                         | Get most relevant posts from the app     |
+| /api/posts/following         | GET               | [posts]                         | Get posts from people I follow     |
+| /api/posts/details/:id         | GET               | {post}                         | Get one particular post from     |
+| /api/posts/create        | POST               | {post}                         | Create a Post     |
+| /api/posts/edit/:id        | PUT               | {post}                         | Edit a Post     |
+| /api/posts/delete/:id        | DELETE               | {msg: "you deleted your post!"}                         | Delete a Post     |
 
 ## **Comment routes**:
 
